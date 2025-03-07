@@ -1,0 +1,159 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1e5ee;
+}
+
+header h1 {
+    color: #3f51b5;
+    margin-bottom: 0.5rem;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #3f51b5;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e1e5ee;
+}
+
+/* Interactive area */
+.input-area {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#userInput {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #e1e5ee;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+#submitBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#submitBtn:hover {
+    background-color: #303f9f;
+}
+
+.output-area {
+    background-color: #f5f7fa;
+    padding: 1rem;
+    border-radius: 4px;
+    min-height: 100px;
+}
+
+#results {
+    margin-top: 0.5rem;
+    min-height: 2rem;
+}
+
+/* Action buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.buttons button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #388e3c;
+}
+
+#timeBtn {
+    background-color: #4caf50;
+}
+
+#weatherBtn {
+    background-color: #ff9800;
+}
+
+#infoBtn {
+    background-color: #2196f3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    color: #666;
+    border-top: 1px solid #e1e5ee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    .buttons button {
+        width: 100%;
+    }
+    
+    .input-area {
+        flex-direction: column;
+    }
+    
+    #userInput, #submitBtn {
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    #userInput {
+        margin-bottom: 0.5rem;
+    }
+}
