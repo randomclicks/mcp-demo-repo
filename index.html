@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Demo Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MCP Demo Web App</h1>
+            <p>A simple web application for testing MCP browser tools</p>
+        </header>
+        
+        <main>
+            <section class="info-card">
+                <h2>What is MCP?</h2>
+                <p>Model Context Protocol (MCP) is an open standard for connecting AI assistants to data sources and tools.</p>
+            </section>
+            
+            <section class="interactive">
+                <h2>Interactive Demo</h2>
+                <div class="input-area">
+                    <input type="text" id="userInput" placeholder="Enter some text...">
+                    <button id="submitBtn">Submit</button>
+                </div>
+                <div class="output-area">
+                    <h3>Results:</h3>
+                    <div id="results"></div>
+                </div>
+            </section>
+            
+            <section class="actions">
+                <h2>Available Actions</h2>
+                <div class="buttons">
+                    <button id="timeBtn">Get Current Time</button>
+                    <button id="weatherBtn">Mock Weather Data</button>
+                    <button id="infoBtn">System Info</button>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Created with MCP via Claude - <span id="currentYear"></span></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
